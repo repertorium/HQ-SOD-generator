@@ -31,7 +31,7 @@ def splitInstruments(midi_filepath : pathlib.Path,
                       root_dir: pathlib.Path) -> list[pathlib.Path]:
   # construye comando para ejecutar el script `splitInstruments.py`
   command = [
-              './Users/jaimegarcia/Desktop/BBCSO/HQ-SOD-generator/Reaper/splitInstruments.py',
+              '/Users/jaimegarcia/Desktop/BBCSO/HQ-SOD-generator/Reaper/splitInstruments.py',
               '-m',midi_filepath,
               '-d',root_dir,
   ]
@@ -74,7 +74,7 @@ def getMidiTempoIntervals(midi_filepath:str) -> list[tuple[float,float]]:
   '''
   # construye el comando para ejecutar el script `getTempoChanges.py`
   command = [
-              './Users/jaimegarcia/Desktop/BBCSO/HQ-SOD-generator/Reaper/getTempoChanges.py',
+              '/Users/jaimegarcia/Desktop/BBCSO/HQ-SOD-generator/Reaper/getTempoChanges.py',
               '-m',midi_filepath,
   ]
   command_result = subprocess.run(command,capture_output=True,text=True)
@@ -107,6 +107,43 @@ def deleteAllTempoMarkers():
     RPR_ShowConsoleMsg(f'Deleting tempo marker {n}\n')
     RPR_DeleteTempoTimeSigMarker(0, n)
 
+def deleteTrackMediaItems(track):
+  '''
+  Elimina todos los items multimedia de un track
+  '''
+  # obtiene los items de este track
+  n_items = RPR_GetTrackNumMediaItems(track)
+  media_items = [RPR_GetTrackMediaItem(track, index) for index in range(n_items)]
+  # borra
+  for item in media_items:
+    RPR_DeleteTrackMediaItem(track, item)
+
+def getNextFilepath() -> tuple[int,str]:
+  '''
+  Consulta al dispatcher el siguiente fichero midi a procesar
+  '''
+  command = [
+              '/Users/jaimegarcia/Desktop/BBCSO/HQ-SOD-generator/Reaper/dispatcher.py',
+              '--next'
+            ]
+  command_result = subprocess.run(command,capture_output=True,text=True)
+  exit_code = command_result.returncode
+  next_filepath = command_result.stdout
+
+  return exit_code, next_filepath
+
+def popFilepath() -> int:
+  '''
+  Pide al dispatcher que elimine el fichero de la lista
+  '''
+  command = [
+              '/Users/jaimegarcia/Desktop/BBCSO/HQ-SOD-generator/Reaper/dispatcher.py',
+              '--remove'
+            ]
+  command_result = subprocess.run(command,capture_output=True,text=True)
+
+  return command_result.returncode
+
 def main(root_dir: str, midi_filepath: str):
   # obtiene los nombres de los tracks del proyecto
   tracks = getAllTracks()
@@ -133,13 +170,25 @@ def main(root_dir: str, midi_filepath: str):
   render_output_directory.mkdir(parents=True,exist_ok=True)
   RPR_GetSetProjectInfo_String(0, "RENDER_FILE", render_output_directory, True)
   RPR_Main_OnCommand(41824, 0)
-  # elimina todos los intervalos de tempo y deselecciona tracks
+  # elimina todos los intervalos de tempo, items multimedia, deselecciona tracks
+  #  y elimina ventana de tiempo
   deleteAllTempoMarkers()
+  for track in tracks:
+    deleteTrackMediaItems(track)
   selectTrack(tracks,-1)
+  RPR_GetSet_LoopTimeRange2(0, True, False, 0, 0, False)
 
 if __name__ == '__main__':
   # directorio de salida de los ficheros midi de instrumentos
   root_dir = '/Users/jaimegarcia/Desktop/BBCSO/ReaScript/.temp'
-  # ruta al fichero
-  midi_filepath = '/Users/jaimegarcia/Desktop/BBCSO/random_tempo_dynamics.MID'
-  main(root_dir,midi_filepath)
+  exit_code = 0
+  while(exit_code == 0):
+    # consulta el siguiente fichero a procesar
+    exit_code, next_filepath = getNextFilepath()
+    if exit_code != 0:
+      break
+    RPR_ShowConsoleMsg(f'Next MIDI filepath: {next_filepath}\n')
+    # procesa el fichero
+    main(root_dir,midi_filepath=next_filepath)
+    # elimina el fichero de la lista
+    exit_code = popFilepath()
