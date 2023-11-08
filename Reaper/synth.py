@@ -130,7 +130,7 @@ def getNextFilepath() -> tuple[int,str]:
   exit_code = command_result.returncode
   next_filepath = command_result.stdout
 
-  return exit_code, next_filepath
+  return exit_code, next_filepath.strip()
 
 def popFilepath() -> int:
   '''
@@ -166,7 +166,7 @@ def main(root_dir: str, midi_filepath: str):
       RPR_SetMediaTrackInfo_Value(track,'I_SELECTED',1)
       RPR_ShowConsoleMsg(f'Audio track {n+1} - {track_name}\n')
   # ajusta el directorio de salida y renderiza
-  render_output_directory = pathlib.Path(root_dir).parent / 'render'
+  render_output_directory = pathlib.Path(root_dir).parent / 'render' / pathlib.Path(midi_filepath).stem
   render_output_directory.mkdir(parents=True,exist_ok=True)
   RPR_GetSetProjectInfo_String(0, "RENDER_FILE", render_output_directory, True)
   RPR_Main_OnCommand(41824, 0)
@@ -180,7 +180,7 @@ def main(root_dir: str, midi_filepath: str):
 
 if __name__ == '__main__':
   # directorio de salida de los ficheros midi de instrumentos
-  root_dir = '/Users/jaimegarcia/Desktop/BBCSO/ReaScript/.temp'
+  root_dir = '/Users/jaimegarcia/Desktop/BBCSO/ReaScript/.temp/'
   exit_code = 0
   while(exit_code == 0):
     # consulta el siguiente fichero a procesar
