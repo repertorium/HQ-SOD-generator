@@ -1,2 +1,7 @@
 __pycache__/
 .DS_Store
+Reaper/scanned_files.json
+Reaper/test2.py
+articulations.txt
+MicBleeding/plots/
+MicBleeding/test_results
