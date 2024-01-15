@@ -1,0 +1,700 @@
+bass:
+  Legato:
+    CC#32: 1
+    Probability: 0.55
+  Long:
+    CC#32: 2
+    Probability: 0.008623683734648684
+  Long CS:
+    CC#32: 3
+    Probability: 0.00797830280097429
+  Long Flautando:
+    CC#32: 4
+    Probability: 0.012089707705678791
+  Long Harmonics:
+    CC#32: 5
+    Probability: 0.012305063764821307
+  Long Marcato Attack:
+    CC#32: 6
+    Probability: 0.0018657356843127522
+  Long Sul Pont:
+    CC#32: 7
+    Probability: 0.008323455218867038
+  Long Sul Tasto:
+    CC#32: 8
+    Probability: 0.00031255865600117677
+  Short Col Legno:
+    CC#32: 9
+    Probability: 0.004921533977186842
+  Short Harmonics:
+    CC#32: 10
+    Probability: 0.008302809497732168
+  Short Pizzicato:
+    CC#32: 11
+    Probability: 0.05
+  Short Pizzicato Bartok:
+    CC#32: 12
+    Probability: 0.05
+  Short Spiccato:
+    CC#32: 13
+    Probability: 0.005851693245861801
+  Short Spiccato CS:
+    CC#32: 14
+    Probability: 0.007587261346937347
+  Short Staccato:
+    CC#32: 15
+    Probability: 0.25
+  Tremolo:
+    CC#32: 16
+    Probability: 0.003216664718721477
+  Tremolo CS:
+    CC#32: 17
+    Probability: 0.0012225996782225749
+  Tremolo Sul Pont:
+    CC#32: 18
+    Probability: 0.0018069028211583978
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.00903269336667633
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.006559333782198895
+bassoon:
+  Legato:
+    CC#32: 1
+    Probability: 0.55
+  Legato (extended):
+    CC#32: 21
+    Probability: 0.010050946694465707
+  Long:
+    CC#32: 2
+    Probability: 0.021876191934149535
+  Long Flutter:
+    CC#32: 24
+    Probability: 0.026120865667036818
+  Short Marcato:
+    CC#32: 27
+    Probability: 0.04
+  Short Staccatissimo:
+    CC#32: 29
+    Probability: 0.3
+  Short Tenuto:
+    CC#32: 31
+    Probability: 0.03
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.007547314062940695
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.014404681641407095
+celeste:
+  Short Damped:
+    CC#32: 48
+    Probability: 0.0964712697006751
+  Short Damped Medium:
+    CC#32: 49
+    Probability: 0.5915050118003372
+  Short Sustained:
+    CC#32: 47
+    Probability: 0.3120237184989877
+cello:
+  Legato:
+    CC#32: 1
+    Probability: 0.55
+  Long:
+    CC#32: 2
+    Probability: 0.0068130959134308135
+  Long CS:
+    CC#32: 3
+    Probability: 0.004110312019556715
+  Long Flautando:
+    CC#32: 4
+    Probability: 0.0038204053129554435
+  Long Harmonics:
+    CC#32: 5
+    Probability: 0.007372454622637947
+  Long Marcato Attack:
+    CC#32: 6
+    Probability: 0.010495029737821779
+  Long Sul Pont:
+    CC#32: 7
+    Probability: 0.010466584367178462
+  Long Sul Tasto:
+    CC#32: 8
+    Probability: 0.0063948405867571305
+  Short Col Legno:
+    CC#32: 9
+    Probability: 0.005392486171534377
+  Short Harmonics:
+    CC#32: 10
+    Probability: 0.004487702346596424
+  Short Pizzicato:
+    CC#32: 11
+    Probability: 0.05
+  Short Pizzicato Bartok:
+    CC#32: 12
+    Probability: 0.05
+  Short Spiccato:
+    CC#32: 13
+    Probability: 0.001503674533566775
+  Short Spiccato CS:
+    CC#32: 14
+    Probability: 0.006976776297761407
+  Short Staccato:
+    CC#32: 15
+    Probability: 0.25
+  Tremolo:
+    CC#32: 16
+    Probability: 0.008813865019119285
+  Tremolo CS:
+    CC#32: 17
+    Probability: 0.003854901705745963
+  Tremolo Sul Pont:
+    CC#32: 18
+    Probability: 0.006555555579880667
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.0008751859941832044
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.012067129791273473
+clarinet:
+  Legato:
+    CC#32: 1
+    Probability: 0.55
+  Legato (extended):
+    CC#32: 21
+    Probability: 0.008856140978563838
+  Long:
+    CC#32: 2
+    Probability: 0.031693601506838046
+  Long Flutter:
+    CC#32: 24
+    Probability: 0.016362315498815484
+  Multitongue:
+    CC#32: 26
+    Probability: 0.017661148195735162
+  Short Marcato:
+    CC#32: 27
+    Probability: 0.05
+  Short Staccatissimo:
+    CC#32: 29
+    Probability: 0.25
+  Short Tenuto:
+    CC#32: 31
+    Probability: 0.03
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.033697200354981464
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.011729593465065878
+coranglais:
+  Legato:
+    CC#32: 1
+    Probability: 0.6
+  Legato (extended):
+    CC#32: 21
+    Probability: 0.014590579248174959
+  Long:
+    CC#32: 2
+    Probability: 0.011868524983494933
+  Short Marcato:
+    CC#32: 27
+    Probability: 0.04
+  Short Staccatissimo:
+    CC#32: 29
+    Probability: 0.25
+  Short Tenuto:
+    CC#32: 31
+    Probability: 0.03
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.046374619355336384
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.00716627641299368
+flute:
+  Legato:
+    CC#32: 1
+    Probability: 0.55
+  Legato (extended):
+    CC#32: 21
+    Probability: 0.00336596526374406
+  Long:
+    CC#32: 2
+    Probability: 0.013455319546216716
+  Long Flutter:
+    CC#32: 24
+    Probability: 0.016085758891105254
+  Multitongue:
+    CC#32: 26
+    Probability: 0.041013460897572594
+  Short Marcato:
+    CC#32: 27
+    Probability: 0.05
+  Short Staccatissimo:
+    CC#32: 29
+    Probability: 0.25
+  Short Tenuto:
+    CC#32: 31
+    Probability: 0.03
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.01629162019383915
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.02978787520752209
+glockenspiel:
+  Long Rolls:
+    CC#32: 35
+    Probability: 0.7535539586365345
+  Short Hits:
+    CC#32: 38
+    Probability: 0.24644604136346548
+harp:
+  Long Bisbigliando Trem:
+    CC#32: 44
+    Probability: 0.2727816638726997
+  Short Gliss:
+    CC#32: 46
+    Probability: 0.14150510701141586
+  Short Hits Damped:
+    CC#32: 39
+    Probability: 0.18005469585569642
+  Short Hits Damped Medium:
+    CC#32: 45
+    Probability: 0.1833754869988595
+  Short Sustained:
+    CC#32: 47
+    Probability: 0.22228304626132842
+horn:
+  Legato:
+    CC#32: 1
+    Probability: 0.4
+  Legato (extended):
+    CC#32: 21
+    Probability: 0.15
+  Long (Muted):
+    CC#32: 22
+    Probability: 0.01571221356791895
+  Long CS:
+    CC#32: 3
+    Probability: 0.026425505374725308
+  Long Cuivre:
+    CC#32: 23
+    Probability: 0.02012787856062569
+  Long Flutter:
+    CC#32: 24
+    Probability: 0.005762180385601398
+  Long Sfz:
+    CC#32: 25
+    Probability: 0.016532806902428126
+  Multitongue:
+    CC#32: 26
+    Probability: 0.02270387884211308
+  Short Marcato:
+    CC#32: 27
+    Probability: 0.006480040238546814
+  Short Marcato (Muted):
+    CC#32: 28
+    Probability: 0.020953898796881268
+  Short Staccatissimo:
+    CC#32: 29
+    Probability: 0.2
+  Short Staccatissimo (Muted):
+    CC#32: 30
+    Probability: 0.1
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.006670164639780454
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.008631432691378917
+marimba:
+  Long Rolls:
+    CC#32: 35
+    Probability: 0.45959918438572395
+  Short Hits:
+    CC#32: 38
+    Probability: 0.540400815614276
+oboe:
+  Legato:
+    CC#32: 1
+    Probability: 0.55
+  Legato (extended):
+    CC#32: 21
+    Probability: 0.0017558733114491011
+  Long:
+    CC#32: 2
+    Probability: 0.025691216556604533
+  Multitongue:
+    CC#32: 26
+    Probability: 0.03770900760166195
+  Short Marcato:
+    CC#32: 27
+    Probability: 0.06
+  Short Staccatissimo:
+    CC#32: 29
+    Probability: 0.25
+  Short Tenuto:
+    CC#32: 31
+    Probability: 0.04
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.017082149385970306
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.01776175314431397
+piccolo:
+  Falls:
+    CC#32: 32
+    Probability: 0.014795846537638007
+  Legato:
+    CC#32: 1
+    Probability: 0.55
+  Legato (extended):
+    CC#32: 21
+    Probability: 0.017053324324701864
+  Long:
+    CC#32: 2
+    Probability: 0.006787655185404379
+  Long Flutter:
+    CC#32: 24
+    Probability: 0.014945793236437974
+  Multitongue:
+    CC#32: 26
+    Probability: 0.010109030730449385
+  Rips:
+    CC#32: 33
+    Probability: 0.01075961357360705
+  Short Marcato:
+    CC#32: 27
+    Probability: 0.06
+  Short Staccatissimo:
+    CC#32: 29
+    Probability: 0.25
+  Short Tenuto:
+    CC#32: 31
+    Probability: 0.04
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.0074331929795868265
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.01811554343217439
+timpani:
+  Hotrods Hits Damped:
+    CC#32: 34
+    Probability: 0.0856685623000375
+  Long Rolls:
+    CC#32: 35
+    Probability: 0.0986243290116225
+  Long Rolls Hotrods:
+    CC#32: 36
+    Probability: 0.13242589428905416
+  Long Rolls Soft:
+    CC#32: 37
+    Probability: 0.10709321605892005
+  Short Hits:
+    CC#32: 38
+    Probability: 0.15736515186122096
+  Short Hits Damped:
+    CC#32: 39
+    Probability: 0.15725031461070857
+  Short Hits Damped Soft:
+    CC#32: 40
+    Probability: 0.02919941100146032
+  Short Hits Hotrods:
+    CC#32: 41
+    Probability: 0.09579597653385176
+  Short Hits Soft:
+    CC#32: 42
+    Probability: 0.05545270261370428
+  Short Hits Super Damped:
+    CC#32: 43
+    Probability: 0.08112444171941986
+trombone:
+  Legato:
+    CC#32: 1
+    Probability: 0.35
+  Legato (extended):
+    CC#32: 21
+    Probability: 0.15
+  Long (Muted):
+    CC#32: 22
+    Probability: 0.045177883555188904
+  Long Cuivre:
+    CC#32: 23
+    Probability: 0.021334801255520952
+  Long Flutter:
+    CC#32: 24
+    Probability: 0.020658293883780363
+  Long Sfz:
+    CC#32: 25
+    Probability: 0.0027980052907293136
+  Multitongue:
+    CC#32: 26
+    Probability: 0.03842069366883952
+  Short Marcato:
+    CC#32: 27
+    Probability: 0.06117358699996391
+  Short Marcato (Muted):
+    CC#32: 28
+    Probability: 0.010436735345977107
+  Short Staccatissimo:
+    CC#32: 29
+    Probability: 0.2
+  Short Staccatissimo (Muted):
+    CC#32: 30
+    Probability: 0.1
+trumpet:
+  Legato:
+    CC#32: 1
+    Probability: 0.4
+  Legato (extended):
+    CC#32: 21
+    Probability: 0.15
+  Long (Muted):
+    CC#32: 22
+    Probability: 0.0205227237302688
+  Long CS:
+    CC#32: 3
+    Probability: 0.027240183657431503
+  Long Cuivre:
+    CC#32: 23
+    Probability: 0.0003301601612218818
+  Long Flutter:
+    CC#32: 24
+    Probability: 0.02426833099084726
+  Long Sfz:
+    CC#32: 25
+    Probability: 0.0201410792785498
+  Multitongue:
+    CC#32: 26
+    Probability: 0.033278378162939284
+  Short Marcato:
+    CC#32: 27
+    Probability: 0.011852564782985325
+  Short Marcato (Muted):
+    CC#32: 28
+    Probability: 0.014310474359913814
+  Short Staccatissimo:
+    CC#32: 29
+    Probability: 0.18
+  Short Staccatissimo (Muted):
+    CC#32: 30
+    Probability: 0.1
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.004861321875124331
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.013194783000718014
+tuba:
+  Legato:
+    CC#32: 1
+    Probability: 0.6
+  Long:
+    CC#32: 2
+    Probability: 0.017603406043793544
+  Long (Muted):
+    CC#32: 22
+    Probability: 0.018764429616178583
+  Long Cuivre:
+    CC#32: 23
+    Probability: 0.01101055105665712
+  Long Flutter:
+    CC#32: 24
+    Probability: 0.010360361218376841
+  Long Sfz:
+    CC#32: 25
+    Probability: 0.01602265924315974
+  Multitongue:
+    CC#32: 26
+    Probability: 0.012599715825135114
+  Short Marcato:
+    CC#32: 27
+    Probability: 0.013638876996699146
+  Short Staccatissimo:
+    CC#32: 29
+    Probability: 0.3
+tubularbells:
+  Long Rolls:
+    CC#32: 35
+    Probability: 0.6214296982942592
+  Short Hits:
+    CC#32: 38
+    Probability: 0.34769901891313165
+  Short Hits Damped:
+    CC#32: 39
+    Probability: 0.03087128279260921
+untunedpercussion:
+  Anvil:
+    CC#32: 100
+    Probability: 0.15697158845914372
+  Bass Drum 1:
+    CC#32: 101
+    Probability: 0.12939083610870356
+  Bass Drum 2:
+    CC#32: 102
+    Probability: 0.024031332531781815
+  Cymbal:
+    CC#32: 103
+    Probability: 0.13010306119889295
+  Military Drum:
+    CC#32: 104
+    Probability: 0.0711018829145491
+  Piatti:
+    CC#32: 105
+    Probability: 0.04067017287307262
+  Snare 1:
+    CC#32: 106
+    Probability: 0.014509040595630136
+  Snare 2:
+    CC#32: 107
+    Probability: 0.02263326120579676
+  Tam Tam:
+    CC#32: 108
+    Probability: 0.035137176650867255
+  Tambourine:
+    CC#32: 109
+    Probability: 0.12225365941281646
+  Tenor Drum:
+    CC#32: 110
+    Probability: 0.10223838619707154
+  Toys:
+    CC#32: 111
+    Probability: 0.14849715105806555
+  Triangle:
+    CC#32: 112
+    Probability: 0.0024624507936085423
+viola:
+  Legato:
+    CC#32: 1
+    Probability: 0.6
+  Long:
+    CC#32: 2
+    Probability: 0.0037385012993916347
+  Long CS:
+    CC#32: 3
+    Probability: 0.0022802293585589667
+  Long Flautando:
+    CC#32: 4
+    Probability: 0.004447725215100645
+  Long Harmonics:
+    CC#32: 5
+    Probability: 0.0037536881479624602
+  Long Marcato Attack:
+    CC#32: 6
+    Probability: 0.05
+  Long Sul Pont:
+    CC#32: 7
+    Probability: 0.0024495587673365087
+  Long Sul Tasto:
+    CC#32: 8
+    Probability: 0.0022785666749031604
+  Short Col Legno:
+    CC#32: 9
+    Probability: 0.003446830940037736
+  Short Harmonics:
+    CC#32: 10
+    Probability: 0.0014945042761655347
+  Short Pizzicato:
+    CC#32: 11
+    Probability: 0.001
+  Short Pizzicato Bartok:
+    CC#32: 12
+    Probability: 0.001
+  Short Spiccato:
+    CC#32: 13
+    Probability: 0.0017889887867479604
+  Short Spiccato CS:
+    CC#32: 14
+    Probability: 0.004268466867218951
+  Short Staccato:
+    CC#32: 15
+    Probability: 0.3
+  Tremolo:
+    CC#32: 16
+    Probability: 0.004537870570880417
+  Tremolo CS:
+    CC#32: 17
+    Probability: 0.003325299344520571
+  Tremolo Sul Pont:
+    CC#32: 18
+    Probability: 0.004567028638722232
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.002124790912402446
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.0034979502000507005
+violin:
+  Legato:
+    CC#32: 1
+    Probability: 0.6
+  Long:
+    CC#32: 2
+    Probability: 0.0022391969262544648
+  Long CS:
+    CC#32: 3
+    Probability: 0.005080177501679083
+  Long Flautando:
+    CC#32: 4
+    Probability: 0.00016832749392434296
+  Long Harmonics:
+    CC#32: 5
+    Probability: 0.00423810900342165
+  Long Marcato Attack:
+    CC#32: 6
+    Probability: 0.05
+  Long Sul Pont:
+    CC#32: 7
+    Probability: 0.0018129196460378734
+  Long Sul Tasto:
+    CC#32: 8
+    Probability: 0.003691764253250371
+  Short Col Legno:
+    CC#32: 9
+    Probability: 0.003980082452653212
+  Short Harmonics:
+    CC#32: 10
+    Probability: 0.003812701192920645
+  Short Pizzicato:
+    CC#32: 11
+    Probability: 0.001
+  Short Pizzicato Bartok:
+    CC#32: 12
+    Probability: 0.001
+  Short Spiccato:
+    CC#32: 13
+    Probability: 0.004869323687582663
+  Short Spiccato CS:
+    CC#32: 14
+    Probability: 0.0031456156699996665
+  Short Staccato:
+    CC#32: 15
+    Probability: 0.3
+  Tremolo:
+    CC#32: 16
+    Probability: 0.004124613300609403
+  Tremolo CS:
+    CC#32: 17
+    Probability: 0.0006936250405896756
+  Tremolo Sul Pont:
+    CC#32: 18
+    Probability: 0.0047739993045790435
+  Trill (Major 2nd):
+    CC#32: 19
+    Probability: 0.0018299688493598177
+  Trill (Minor 2nd):
+    CC#32: 20
+    Probability: 0.00353957567713801
+xylophone:
+  Long Rolls:
+    CC#32: 35
+    Probability: 0.06437692117931822
+  Short Hits:
+    CC#32: 38
+    Probability: 0.9356230788206819

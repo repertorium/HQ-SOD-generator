@@ -85,11 +85,11 @@ def addRandomDyamicTransitions(seed: int,
     # randomly select indexes where this transitions are inserted
     # selected indexes cant be 0 nor -1 and cant be consecutive
     # (transtions occur between two different dynamic intervals)
-    transition_indexes = random.sample([*range(1,len(dynamics)-1)],k=n_transitions)
+    transition_indexes = random.sample([*range(1,len(dynamics))],k=n_transitions)
     transition_indexes.sort()
     # ensure no consecutive indexes
     while (abs(np.diff(transition_indexes)) == 1).any():
-        transition_indexes = random.sample([*range(1,len(dynamics)-1)],k=n_transitions)
+        transition_indexes = random.sample([*range(1,len(dynamics))],k=n_transitions)
         transition_indexes.sort()
     # randomly computes each gradual transition duration
     transition_durations = random.sample([*range(transition_min_duration,transition_max_duration)],k=n_transitions)
