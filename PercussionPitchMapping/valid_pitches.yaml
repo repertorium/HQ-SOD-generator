@@ -1,0 +1,139 @@
+# Defines the valid MIDI pitches for each untuned percussion instrument.
+# These instruments are indentified by the CC#32 value defined in the
+# `articulations.yaml` file.
+
+100:              # CC#32 value
+  Name: Anvil     # Instrument name
+  Valid_pitches:  # Valid set of MIDI pitches
+    - 48
+    - 50
+    - 52
+    - 53
+101:
+  Name: Bass Drum 1
+  Valid_pitches:
+    - 48
+    - 50
+    - 52
+    - 53
+    - 57      # roll
+102:
+  Name: Bass Drum 2
+  Valid_pitches:
+    - 48
+    - 50
+    - 52
+    - 53
+    - 54
+    - 56
+    - 57      # roll
+    - 59      # roll
+103: 
+  Name: Cymbal
+  Valid_pitches:
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57      # roll
+    - 58
+    - 59
+    - 60
+104:
+  Name: Military Drum
+  Valid_pitches:
+    - 48
+    - 50
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57      # roll
+105:
+  Name: Piatti
+  Valid_pitches:
+    - 48
+    - 50
+    - 52
+    - 53
+    - 57      # roll
+106:
+  Name: Snare 1
+  Valid_pitches:
+    - 48
+    - 50
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57      # roll
+107: 
+  Name: Snare 2
+  Valid_pitches:
+    - 48
+    - 50
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57      # roll
+108:
+  Name: Tam Tam
+  Valid_pitches:
+    - 48
+    - 50
+    - 52
+    - 53
+    - 55
+    - 57       # roll
+    - 58
+    - 59
+    - 60
+109:
+  Name: Tambourine
+  Valid_pitches:
+    - 48
+    - 50
+    - 52
+    - 57      # roll
+110:
+  Name: Tenor Drum
+  Valid_pitches:
+    - 48
+    - 50
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57      # roll
+111:
+  Name: Toys
+  Valid_pitches:
+    - 48
+    - 50
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    - 60
+112:
+  Name: Triangle
+  Valid_pitches:
+    - 48
+    - 50
+    - 52
+    - 53
+    - 57      # roll

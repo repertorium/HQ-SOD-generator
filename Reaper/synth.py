@@ -180,7 +180,7 @@ def main(root_dir: str, midi_filepath: str):
 
 if __name__ == '__main__':
   # directorio de salida de los ficheros midi de instrumentos
-  root_dir = '/Users/jaimegarcia/Desktop/BBCSO/ReaScript/.temp/'
+  root_dir = '/Volumes/TOSHIBA/SOD/Tree_Musicalion/.temp/'
   exit_code = 0
   while(exit_code == 0):
     # consulta el siguiente fichero a procesar
