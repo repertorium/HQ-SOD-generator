@@ -13,7 +13,9 @@ def getRandomDynamicIntervals(seed:int ,
                               midi_data_end_time: float,
                               dynamic_velocity_map: dict,
                               min_dynamic_intervals:int,
-                              max_dynamic_intervals:int) -> tuple[list[str],list[float]]:
+                              default_upper_limit:int,
+                              extra_duration:float,
+                              upper_limit_increasing_ratio:int) -> tuple[list[str],list[float]]:
     '''
     Randomly generates a set of dynamic intervals without gradual transitions.
 
@@ -31,6 +33,8 @@ def getRandomDynamicIntervals(seed:int ,
     '''
     random.seed(seed)
     # randomly establish a total number of dynamic intervals
+    extra_intervals = int(np.ceil((midi_data_end_time/extra_duration -1))*upper_limit_increasing_ratio)
+    max_dynamic_intervals = default_upper_limit + extra_intervals
     total_dynamic_intervals = random.randint(min_dynamic_intervals,max_dynamic_intervals)
     # randomly set a dynamic mark for each interval 
     # two adjacent intervals cannot have the same dynamic
@@ -122,7 +126,9 @@ def addRandomDyamicTransitions(seed: int,
 def insertDynamicIntervals(seed:int,
                            midi_data: pretty_midi.PrettyMIDI,
                            min_dynamic_intervals:int = 3,
-                           max_dynamic_intervals:int = 10,
+                           default_upper_limit:int = 10,
+                           extra_duration:float = 120,
+                           upper_limit_increasing_ratio:int = 1,
                            max_transitions_percentage: float = 0.3,
                            transition_min_duration: int = 5,
                            transition_max_duration: int = 20) -> None:
@@ -134,7 +140,12 @@ def insertDynamicIntervals(seed:int,
     - seed: Seed for random number generation
     - midi_data: Midi data from a midi file modeled as a PrettyMidi object
     - min_dynamic_intervals: Minimum random dynamic intervals to generate. Defaults to 3
-    - max_dynamic_intervals: Maximum random tempo intervals to generate. Defaults to 10.
+    - default_upper_limit: Default maximum random tempo intervals to generate. Defaults to 10.
+    - extra_duration: Time duration in seconds that implies adding a
+                     `upper_limit_increasing_ration` extra dynamic interval.
+    - upper_limit_increasing_ration: How many extra dynamic intervals to add
+                                     for each extra `extra_duration` minutes of the
+                                     processed MIDI file    
     - max_transitions_percentage: The maximum number of gradual transitions that can be inserted.
     Its value is expressed within 0 and 1. Defaults to 0.3
     - transition_min_duration: The minimum duration that a gradual tansition may have. Defaults to
@@ -142,7 +153,7 @@ def insertDynamicIntervals(seed:int,
     - transition_max_duration: The maximum duration that a gradual tansition may have. Defaults to
     5 seconds.
     '''
-    # Mapeo dinamicas - velocity
+    # Dynamic - velocity map
     dynamic_velocity_map = {
     'ppp':np.arange(0,16),
     'pp':np.arange(16,32),
@@ -155,7 +166,8 @@ def insertDynamicIntervals(seed:int,
     }
     # random dynamic intervals
     dynamics, start_times = getRandomDynamicIntervals(seed,midi_data.get_end_time(),dynamic_velocity_map,
-                              min_dynamic_intervals,max_dynamic_intervals)
+                              min_dynamic_intervals,default_upper_limit,
+                              extra_duration,upper_limit_increasing_ratio)
     # random transitions
     addRandomDyamicTransitions(seed,dynamic_velocity_map,dynamics,start_times,
                                max_transitions_percentage,transition_min_duration, transition_max_duration)

@@ -13,7 +13,8 @@ def processMIDI(midi_data : pretty_midi.PrettyMIDI,
                 seed: int) -> None:
     # insert tempo intervals
     tempo_values, start_times= TempoRandomizer.getRandomTempoIntervals(seed,midi_data.get_end_time(),mean=120,deviation=20,
-                        min_tempo_intervals=4,max_tempo_intervals=10)
+                        min_tempo_intervals=4,default_upper_limit=10,
+                        extra_duration=120,upper_limit_increasing_ratio=1)
     TempoRandomizer.insertTempoChanges(midi_data,tempo_values,start_times)
     # random dynamic intervals
     DynamicsRandomizer.insertDynamicIntervals(seed,midi_data)

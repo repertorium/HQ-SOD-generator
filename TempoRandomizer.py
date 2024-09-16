@@ -12,7 +12,9 @@ def getRandomTempoIntervals(seed: int,
                             mean: int,
                             deviation: int,
                             min_tempo_intervals:int,
-                            max_tempo_intervals:int) -> tuple[list[int],list[float]]:
+                            default_upper_limit:int,
+                            extra_duration:float,
+                            upper_limit_increasing_ratio:int) -> tuple[list[int],list[float]]:
     '''
     Randomly generates a set of tempo intervals.
 
@@ -27,13 +29,20 @@ def getRandomTempoIntervals(seed: int,
     - mean: Mean tempo value of the generated intervals
     - deviation: Desired standard deviation of the tempo intervals
     - min_tempo_intervals: Minimum random tempo intervals to generate
-    - max_tempo_intervals: Maximum random tempo intervals to generate
+    - default_upper_limit: Default maximum random tempo intervals to generate
+    - extra_duration: Time duration in seconds that implies adding a
+                     `upper_limit_increasing_ration` extra tempo interval.
+    - upper_limit_increasing_ration: How many extra tempo intervals to add
+                                     for each extra `extra_duration` minutes of the
+                                     processed MIDI file                 
     # Returns: 
     - tempo_values: List of tempo values for each of the generated intervals
     - start_times: List of start times for each of the generated intervals
     '''
     random.seed(seed)
     # randomly establish a total number of tempo intervals
+    extra_intervals = int(np.ceil((midi_data_end_time/extra_duration -1))*upper_limit_increasing_ratio)
+    max_tempo_intervals = default_upper_limit + extra_intervals
     tempo_intervals = random.randint(min_tempo_intervals,max_tempo_intervals)
     np.random.seed(seed % 2**32)
     # compute tempos
