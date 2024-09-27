@@ -6,6 +6,8 @@ The tool recursively processes MIDI files within a directory and automates the s
 
 It also includes support for percussion instrument mapping according to the MIDI pitch ranges of the different percussive instruments of the [Spitfire's BBC Symphony Orchestra Professional sound fonts](https://www.spitfireaudio.com/bbc-symphony-orchestra-professional).
 
+The code for training the baseline and pretrained models is available at https://github.com/repertorium/SynthSOD-Baseline, using the synthesized dataset, which can be downloaded from Zenodo: https://doi.org/10.5281/zenodo.13759492.
+
 ## Features
 
 - Generates diverse and representative orchestral music conditions for AI training: This tool processes MIDI files by introducing variations that mimic realistic orchestral performance.
