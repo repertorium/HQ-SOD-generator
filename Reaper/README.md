@@ -2,7 +2,9 @@
 
 This submodule provides a set of Python scripts for managing MIDI file synthesis using REAPER and Spitfire's BBCSO Professional sound fonts. The primary functionality is centered around the [synth.py](./synth.py) script, which is intended to be run within REAPER.
 
- For more information about running scripts with REAPER, refer to the official REAPER scripting documentation: https://www.reaper.fm/sdk/reascript/reascript.php#reascript_run
+You will additionally need to add the following midi conversion tool to your REAPER plugins list to properly run the [synthsod_template.rpp](./synthsod_template.RPP) REAPER project template.
+
+For more information about running scripts with REAPER, refer to the official REAPER scripting documentation: https://www.reaper.fm/sdk/reascript/reascript.php#reascript_run
 
 ## Files
 
@@ -10,6 +12,7 @@ This submodule provides a set of Python scripts for managing MIDI file synthesis
 - `getTempoChanges.py`: A script for extracting tempo changes from MIDI files.
 - `splitInstruments.py`: A script for splitting MIDI files by instruments.
 - `synth.py`: The script to be run with REAPER.
+- `synthsod_template.rpp`: The REAPER project template used to synthesize the MIDI files of the dataset. 
 
 ## Usage
 
