@@ -12,7 +12,7 @@ For more information about running scripts with REAPER, refer to the official RE
 - `getTempoChanges.py`: A script for extracting tempo changes from MIDI files.
 - `splitInstruments.py`: A script for splitting MIDI files by instruments.
 - `synth.py`: The script to be run with REAPER.
-- `synthsod_template.rpp`: The REAPER project template used to synthesize the MIDI files of the dataset. 
+- `synthsod_template.rpp`: The REAPER project template used for synthesizing the dataset's MIDI files. This template includes all the necessary audio routing and plugin chains preloaded on the corresponding tracks, providing an efficient and streamlined method for synthesizing a large number of files.
 
 ## Usage
 
